@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 23%;
+    height:  380px;
+    margin:0 auto;
+    float: left;
+    padding: 15px;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+    gap: 4px;
+}
+.card :hover{
+    background-color: bisque;
+}
+.card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.btn{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color:powderblue;
+    color: black;
+    font-weight: 600;
+    animation: wave 5s infinite;
+}
+@keyframes wave{
+    0% {color: greenyellow;}
+    20%{color: tomato;margin-left: 10px; }
+    40%{color: tan;}
+    60%{color: black;}
+    80%{color: grey;margin-top: 10px; }
+    100%{color: purple;}
+}
+.price{
+    font-size: 30px;
+}
+.desc{
+    font-size: 20px;
+}
+.del{
+    font-size: 15px;
+    color: goldenrod;
+}
+
+@media(max-width:800px){
+    .card{
+        width: 40%;
+    }
+}
+@media(max-width:430px){
+    .card{
+        width: 100%;
+    }
+}
